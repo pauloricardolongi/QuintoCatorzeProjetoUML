@@ -1,6 +1,6 @@
 package entidades;
 
-public class Produto implements Comparable<Produto>{
+public class Produto{
 
 	private String nome;
 	private Double preco;
@@ -32,11 +32,5 @@ public class Produto implements Comparable<Produto>{
 		return "Produto [nome=" + nome + ", preco=" + preco + "]";
 	}
 
-	@Override
-	public int compareTo(Produto p) {		
-		return nome.toUpperCase().compareTo(p.getNome().toUpperCase());
-	}
-	
-	
 
 }
