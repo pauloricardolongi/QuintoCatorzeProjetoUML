@@ -18,12 +18,8 @@ List<Produto>list = new ArrayList<>();
 		
 		//classe anônima dentro programa principal
 		
-		Comparator<Produto> comp =  new Comparator<Produto>() {
-			@Override
-			public int compare(Produto p1, Produto p2) {
-				
-				return p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());
-			}
+		Comparator<Produto> comp = (p1, p2) -> {
+			return p1.getNome().toUpperCase().compareTo(p2.getNome().toUpperCase());
 			
 		};
 		
