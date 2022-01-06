@@ -17,7 +17,8 @@ List<Produto>list = new ArrayList<>();
 		list.add(new Produto("Tablete",450.00));
 		
 		//classe anônima dentro programa principal
-		Comparator<Produto> comp = (Comparator<Produto>) new Comparator<Produto>() {
+		
+		Comparator<Produto> comp =  new Comparator<Produto>() {
 			@Override
 			public int compare(Produto p1, Produto p2) {
 				
